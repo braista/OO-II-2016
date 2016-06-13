@@ -1,0 +1,1 @@
+|pepe juan ana|pepe := User new name: 'pepe'.juan := User new name: 'juan'.ana  := User new name:'ana'.pepe addFriend: juan.juan addFriend: ana.pepe floodPost: 'q zarpado en smalltalk que estoy! '.ana

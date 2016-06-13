@@ -1,0 +1,1 @@
+|pc pro mem hdd |pro:= Procesador newGhz: 2.4 arch: 'x86'.mem:= Memoria newMem: '4gb'.hdd:= HDD newAmount: '500gb'.pc:= Computadora newPro: pro mem: mem hdd: hdd.pc on.

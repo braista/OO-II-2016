@@ -1,0 +1,1 @@
+BGSArenaWindow beginnerViewOn: (OnTheFlyConfigurableSimulation batteryWalkingBrush).

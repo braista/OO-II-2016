@@ -1,0 +1,1 @@
+|file string|file:= FileOO2 name: 'archivito' ext: '.exe' size: '15kb' cd: '10/06/2016' md: '12/06/2016' perm: 'admin'.file prettyPrint.file:= ExtensionPrint new: file.file:= NamePrint new: file.file prettyPrint.string:=(file prettyPrint).string truncateTo: (string size)-1.

@@ -1,0 +1,1 @@
+|test|test:= OMDBMovieRetriever new.(test retrieveMovieAttributesOf: 'tt0114709') at: 'imdbRating'.

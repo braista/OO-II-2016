@@ -1,0 +1,1 @@
+|base altura|base:= 8. altura:= 4.(base * altura) / 2.(base squared + altura squared) sqrt

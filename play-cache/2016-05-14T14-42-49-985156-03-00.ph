@@ -1,0 +1,1 @@
+|omdb|omdb:= OMDBMovieRetriever new.(omdb retrieveMovieAttributesOf: 'tt0076759').(15 / 4)asFloat

@@ -1,0 +1,1 @@
+| doc |doc:= Document titled:'Objetos'.doc size.doc class.doc class allInstances.Document allInstances.doc addLine: 'bla'.doc class == Document

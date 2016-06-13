@@ -1,0 +1,1 @@
+#ConfigurationOfBotArena asClass loadDevelopment

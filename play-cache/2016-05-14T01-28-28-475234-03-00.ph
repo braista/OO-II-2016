@@ -1,0 +1,1 @@
+|coll col2 col3|coll:= # (2 3 4 5 6 7).col2:= # (1 11 13 14 15 7).col3:= coll flatCollect: [ :num | num odd ].col2

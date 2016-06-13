@@ -1,0 +1,948 @@
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Wallpost>>like
+14 November 2015 1:41:00.958406 pm
+
+VM: Win32 - IX86 - 6.2 - NBCoInterpreter NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+NBCogit NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+https://github.com/pharo-project/pharo-vm.git Commit: 81b5d19917dcb78f22482a780deec48c53738396 Date: 2014-09-20 14:36:18 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14858
+
+Image: Pharo4.0 [Latest update: #40621]
+
+Wallpost(Object)>>doesNotUnderstand: #like
+	Receiver: a Wallpost
+	Arguments and temporary variables: 
+		aMessage: 	like
+		exception: 	MessageNotUnderstood: Wallpost>>like
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		likes: 	nil
+		featured: 	nil
+		text: 	nil
+
+
+WallpostTest>>setUp
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+BlockClosure>>ensure:
+	Receiver: [ 
+self setUp.
+self performTest ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self tearDown.
+self cleanUpInstanceVariables ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>runCase
+		startpc: 	57
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ (self class selector: testSelector) runCase ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self classForTestResource resetResources: self resources ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>debug
+		startpc: 	45
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+WallpostTest class(TestCase class)>>debug:
+	Receiver: WallpostTest
+	Arguments and temporary variables: 
+		aSymbol: 	#testText
+	Receiver's instance variables: 
+		superclass: 	TestCase
+		methodDict: 	a MethodDictionary(#setUp->WallpostTest>>#setUp #testDislike->Wallp...etc...
+		format: 	138
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#wallpost #coolPost)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#WallpostTest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Objetos1-Wallpost-Tests'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		history: 	a Dictionary(#errors->a Set(#testText) #failures->a Set() #passed->a S...etc...
+
+
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+	Receiver: a PackageTreeNautilusUI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		model: 	a PackageTreeNautilus
+		window: 	a NautilusWindow(406323200)
+		hierarchyClass: 	nil
+		cachedHierarchy: 	nil
+		sourceTextArea: 	a PluggableTextMorphWithLimits(654573568)
+		sourceCodePanel: 	a PanelMorph(526909440)
+		commentTextArea: 	nil
+		currentDisplayChoice: 	nil
+		sourceTextAreaLimit: 	350
+		sourceCodeContainer: 	a PanelMorph(785383424)
+		shouldUpdateTitle: 	true
+		testSemaphore: 	a Semaphore()
+		sourceTextAreas: 	an OrderedCollection(a PluggableTextMorphWithLimits(654573568)...etc...
+		multipleMethodsEditor: 	a MultipleMethodsEditor(498860032)
+		contentSelection: 	nil
+		acceptor: 	a MethodDefinitionAcceptor
+		classifier: 	a MethodClassifier
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageTreeWidget
+		packagePattern: 	nil
+		searchWidget: 	a SearchMorph(314310656)
+		packagePatternString: 	nil
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := tes...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:pr...etc...
+		startpc: 	240
+		numArgs: 	0
+
+
+
+--- The full stack ---
+Wallpost(Object)>>doesNotUnderstand: #like
+WallpostTest>>setUp
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>debug
+WallpostTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Wallpost>>like
+14 November 2015 1:43:03.738406 pm
+
+VM: Win32 - IX86 - 6.2 - NBCoInterpreter NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+NBCogit NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+https://github.com/pharo-project/pharo-vm.git Commit: 81b5d19917dcb78f22482a780deec48c53738396 Date: 2014-09-20 14:36:18 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14858
+
+Image: Pharo4.0 [Latest update: #40621]
+
+Wallpost(Object)>>doesNotUnderstand: #like
+	Receiver: a Wallpost
+	Arguments and temporary variables: 
+		aMessage: 	like
+		exception: 	MessageNotUnderstood: Wallpost>>like
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		likes: 	0
+		featured: 	false
+		text: 	'Undefined post'
+
+
+WallpostTest>>setUp
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+BlockClosure>>ensure:
+	Receiver: [ 
+self setUp.
+self performTest ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self tearDown.
+self cleanUpInstanceVariables ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>runCase
+		startpc: 	57
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ (self class selector: testSelector) runCase ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self classForTestResource resetResources: self resources ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>debug
+		startpc: 	45
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testText
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testText
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+WallpostTest class(TestCase class)>>debug:
+	Receiver: WallpostTest
+	Arguments and temporary variables: 
+		aSymbol: 	#testText
+	Receiver's instance variables: 
+		superclass: 	TestCase
+		methodDict: 	a MethodDictionary(#setUp->WallpostTest>>#setUp #testDislike->Wallp...etc...
+		format: 	138
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#wallpost #coolPost)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#WallpostTest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Objetos1-Wallpost-Tests'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		history: 	a Dictionary(#errors->a Set(#testText) #failures->a Set() #passed->a S...etc...
+
+
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+	Receiver: a PackageTreeNautilusUI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		model: 	a PackageTreeNautilus
+		window: 	a NautilusWindow(406323200)
+		hierarchyClass: 	nil
+		cachedHierarchy: 	nil
+		sourceTextArea: 	a PluggableTextMorphWithLimits(654573568)
+		sourceCodePanel: 	a PanelMorph(526909440)
+		commentTextArea: 	nil
+		currentDisplayChoice: 	nil
+		sourceTextAreaLimit: 	350
+		sourceCodeContainer: 	a PanelMorph(785383424)
+		shouldUpdateTitle: 	true
+		testSemaphore: 	a Semaphore()
+		sourceTextAreas: 	an OrderedCollection(a PluggableTextMorphWithLimits(654573568)...etc...
+		multipleMethodsEditor: 	a MultipleMethodsEditor(498860032)
+		contentSelection: 	nil
+		acceptor: 	a MethodDefinitionAcceptor
+		classifier: 	a MethodClassifier
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageTreeWidget
+		packagePattern: 	nil
+		searchWidget: 	a SearchMorph(314310656)
+		packagePatternString: 	nil
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := tes...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:pr...etc...
+		startpc: 	240
+		numArgs: 	0
+
+
+
+--- The full stack ---
+Wallpost(Object)>>doesNotUnderstand: #like
+WallpostTest>>setUp
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>debug
+WallpostTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Wallpost>>like
+14 November 2015 1:43:46.207406 pm
+
+VM: Win32 - IX86 - 6.2 - NBCoInterpreter NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+NBCogit NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+https://github.com/pharo-project/pharo-vm.git Commit: 81b5d19917dcb78f22482a780deec48c53738396 Date: 2014-09-20 14:36:18 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14858
+
+Image: Pharo4.0 [Latest update: #40621]
+
+Wallpost(Object)>>doesNotUnderstand: #like
+	Receiver: a Wallpost
+	Arguments and temporary variables: 
+		aMessage: 	like
+		exception: 	MessageNotUnderstood: Wallpost>>like
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		likes: 	0
+		featured: 	false
+		text: 	'Undefined post'
+
+
+WallpostTest>>setUp
+	Receiver: WallpostTest>>#testToggleFeatured
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testToggleFeatured
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testToggleFeatured
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testToggleFeatured
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+BlockClosure>>ensure:
+	Receiver: [ 
+self setUp.
+self performTest ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self tearDown.
+self cleanUpInstanceVariables ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>runCase
+		startpc: 	57
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testToggleFeatured
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testToggleFeatured
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testToggleFeatured
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testToggleFeatured
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ (self class selector: testSelector) runCase ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self classForTestResource resetResources: self resources ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>debug
+		startpc: 	45
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testToggleFeatured
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testToggleFeatured
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+WallpostTest class(TestCase class)>>debug:
+	Receiver: WallpostTest
+	Arguments and temporary variables: 
+		aSymbol: 	#testToggleFeatured
+	Receiver's instance variables: 
+		superclass: 	TestCase
+		methodDict: 	a MethodDictionary(#setUp->WallpostTest>>#setUp #testDislike->Wallp...etc...
+		format: 	138
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#wallpost #coolPost)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#WallpostTest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Objetos1-Wallpost-Tests'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		history: 	a Dictionary(#errors->a Set(#testToggleFeatured #testText) #failures->...etc...
+
+
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+	Receiver: a PackageTreeNautilusUI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		model: 	a PackageTreeNautilus
+		window: 	a NautilusWindow(406323200)
+		hierarchyClass: 	nil
+		cachedHierarchy: 	nil
+		sourceTextArea: 	a PluggableTextMorphWithLimits(654573568)
+		sourceCodePanel: 	a PanelMorph(526909440)
+		commentTextArea: 	nil
+		currentDisplayChoice: 	nil
+		sourceTextAreaLimit: 	350
+		sourceCodeContainer: 	a PanelMorph(785383424)
+		shouldUpdateTitle: 	true
+		testSemaphore: 	a Semaphore()
+		sourceTextAreas: 	an OrderedCollection(a PluggableTextMorphWithLimits(654573568)...etc...
+		multipleMethodsEditor: 	a MultipleMethodsEditor(498860032)
+		contentSelection: 	nil
+		acceptor: 	a MethodDefinitionAcceptor
+		classifier: 	a MethodClassifier
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageTreeWidget
+		packagePattern: 	nil
+		searchWidget: 	a SearchMorph(314310656)
+		packagePatternString: 	nil
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := tes...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:pr...etc...
+		startpc: 	240
+		numArgs: 	0
+
+
+
+--- The full stack ---
+Wallpost(Object)>>doesNotUnderstand: #like
+WallpostTest>>setUp
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>debug
+WallpostTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Wallpost>>like
+14 November 2015 1:45:00.607406 pm
+
+VM: Win32 - IX86 - 6.2 - NBCoInterpreter NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+NBCogit NativeBoost-CogPlugin-HolgerHansPeterFreyther.21 uuid: e0df6e2d-5694-40e2-8035-dc217200b424 Sep 25 2014
+https://github.com/pharo-project/pharo-vm.git Commit: 81b5d19917dcb78f22482a780deec48c53738396 Date: 2014-09-20 14:36:18 +0200 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14858
+
+Image: Pharo4.0 [Latest update: #40621]
+
+Wallpost(Object)>>doesNotUnderstand: #like
+	Receiver: a Wallpost
+	Arguments and temporary variables: 
+		aMessage: 	like
+		exception: 	MessageNotUnderstood: Wallpost>>like
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		likes: 	0
+		featured: 	false
+		text: 	'Undefined post'
+
+
+WallpostTest>>setUp
+	Receiver: WallpostTest>>#testDislike
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testDislike
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testDislike
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testDislike
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+BlockClosure>>ensure:
+	Receiver: [ 
+self setUp.
+self performTest ]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+self tearDown.
+self cleanUpInstanceVariables ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>runCase
+		startpc: 	57
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>runCase
+	Receiver: WallpostTest>>#testDislike
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testDislike
+		expectedFails: 	nil
+		wallpost: 	a Wallpost
+		coolPost: 	a Wallpost
+
+
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testDislike
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testDislike
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ (self class selector: testSelector) runCase ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self classForTestResource resetResources: self resources ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WallpostTest(TestCase)>>debug
+		startpc: 	45
+		numArgs: 	0
+
+
+WallpostTest(TestCase)>>debug
+	Receiver: WallpostTest>>#testDislike
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testDislike
+		expectedFails: 	nil
+		wallpost: 	nil
+		coolPost: 	nil
+
+
+WallpostTest class(TestCase class)>>debug:
+	Receiver: WallpostTest
+	Arguments and temporary variables: 
+		aSymbol: 	#testDislike
+	Receiver's instance variables: 
+		superclass: 	TestCase
+		methodDict: 	a MethodDictionary(#setUp->WallpostTest>>#setUp #testDislike->Wallp...etc...
+		format: 	138
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#wallpost #coolPost)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#WallpostTest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Objetos1-Wallpost-Tests'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		history: 	a Dictionary(#errors->a Set(#testToggleFeatured #testDislike #testText...etc...
+
+
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+	Receiver: a PackageTreeNautilusUI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		model: 	a PackageTreeNautilus
+		window: 	a NautilusWindow(406323200)
+		hierarchyClass: 	nil
+		cachedHierarchy: 	nil
+		sourceTextArea: 	a PluggableTextMorphWithLimits(654573568)
+		sourceCodePanel: 	a PanelMorph(526909440)
+		commentTextArea: 	nil
+		currentDisplayChoice: 	nil
+		sourceTextAreaLimit: 	350
+		sourceCodeContainer: 	a PanelMorph(785383424)
+		shouldUpdateTitle: 	true
+		testSemaphore: 	a Semaphore()
+		sourceTextAreas: 	an OrderedCollection(a PluggableTextMorphWithLimits(654573568)...etc...
+		multipleMethodsEditor: 	a MultipleMethodsEditor(498860032)
+		contentSelection: 	nil
+		acceptor: 	a ClassOrMethodDefinitionAcceptor
+		classifier: 	a MethodClassifier
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageTreeWidget
+		packagePattern: 	nil
+		searchWidget: 	a SearchMorph(314310656)
+		packagePatternString: 	nil
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := tes...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:pr...etc...
+		startpc: 	240
+		numArgs: 	0
+
+
+
+--- The full stack ---
+Wallpost(Object)>>doesNotUnderstand: #like
+WallpostTest>>setUp
+[ 
+self setUp.
+self performTest ] in WallpostTest(TestCase)>>runCase
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in WallpostTest(TestCase)>>debug
+BlockClosure>>ensure:
+WallpostTest(TestCase)>>debug
+WallpostTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority:
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+

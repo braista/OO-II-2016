@@ -1,0 +1,1 @@
+|rb|rb:= RechargeableBattery new.rb consume: 10.

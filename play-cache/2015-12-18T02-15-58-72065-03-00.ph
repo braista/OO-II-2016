@@ -1,0 +1,1 @@
+|f1|f1:= FuncionCachetFijo newFijo: 100 dia:(DateAndTime year:2016 month:02 day:23 hour:22 minute:00) precio: 250 capacidad: 15.f1 venderEntrada: 'PepeArgento'; venderEntrada: 'LaPiga'; venderEntrada: 'ParraWea'.f1 superaPiso.
