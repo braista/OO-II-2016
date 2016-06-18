@@ -1,0 +1,1 @@
+|file fm|fm:= FileManagerOO2 new.file:= FileOO2 withName: 'archivo' extension: '.exe' size: '15kb' cDate: '18/06/2016' mDate: '19/06/2016' perm: 'rw'.file:= NameDecorator withFile: file.file:= ExtensionDecorator withFile: file.fm addFile: file.fm prettyPrint: file

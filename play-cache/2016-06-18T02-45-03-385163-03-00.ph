@@ -1,0 +1,1 @@
+|string|string:= ' - casita - .exe'.(string)copyFrom: 4 to: (string size)

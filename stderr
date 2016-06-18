@@ -1,0 +1,209 @@
+[31mMessageNotUnderstood: FileOO2>>prettyPrint
+[0mFileOO2(Object)>>doesNotUnderstand: #prettyPrint
+NameDecorator>>prettyPrint
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mSubclassResponsibility: NameDecorator had the subclass responsibility to implement #extension
+[0mNameDecorator(Object)>>subclassResponsibility
+NameDecorator(AbstractFileOO2)>>extension
+ExtensionDecorator>>extension
+ExtensionDecorator>>prettyPrint
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mSubclassResponsibility: NameDecorator had the subclass responsibility to implement #extension
+[0mNameDecorator(Object)>>subclassResponsibility
+NameDecorator(AbstractFileOO2)>>extension
+ExtensionDecorator>>extension
+ExtensionDecorator>>prettyPrint
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: ByteString>>truncate:
+[0mByteString(Object)>>doesNotUnderstand: #truncate:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mPrimitiveFailed: primitive #basicNew: in ByteString class failed
+[0mByteString class(Object)>>primitiveFailed:
+ByteString class(Object)>>primitiveFailed
+ByteString class(Behavior)>>basicNew:
+ByteString class(String class)>>new:
+ByteString(SequenceableCollection)>>copyFrom:to:
+ByteString(String)>>contractTo:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: ByteString>>startingAt:
+[0mByteString(Object)>>doesNotUnderstand: #startingAt:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: ByteString>>findStringFromEnd:
+[0mByteString(Object)>>doesNotUnderstand: #findStringFromEnd:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight in Block: [ ...
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m
