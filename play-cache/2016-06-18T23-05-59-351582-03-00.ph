@@ -1,0 +1,1 @@
+|retriever line|	retriever:= LineRetriever on: '\Pharo4.0\OO-II-2k16\OO II 2016 - Practica 5\Ejercicio 3\twitter-users.csv'.	line:= (retriever retrieveLineStartingWith: ('@carlos'))findTokens: $,.	(line size <= 2)	ifFalse: [ ^line removeLast: (line size - 2)		 ].	^line

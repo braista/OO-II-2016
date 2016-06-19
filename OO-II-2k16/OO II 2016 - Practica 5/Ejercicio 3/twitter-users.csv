@@ -1,0 +1,6 @@
+@juan,Juan Carlos Bala,,,,,
+@pedro,Pedro Troglio,@carlos,,,,
+@carlos,Carlos Saul Mendez,@juan,@pedro,,,
+@jose,Jose Luis Borges,@juansebastian,@ernesto,,,
+@ernesto,Ernesto Sabato,@jose,@pedro,,,
+@juansebastian,Juan Sebastian Veron,@pedro,@juan,@jose,@ernesto,

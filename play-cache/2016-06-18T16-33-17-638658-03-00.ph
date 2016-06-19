@@ -1,0 +1,1 @@
+|twitter parser|parser:= UsersParserP5E3 new.twitter := TwitterP5E3 withUsers: (parser parseFrom: '\Pharo4.0\OO-II-2k16\OO II 2016 - Practica 5\Ejercicio 3\twitter-users.csv').twitter.twitter users first followers 
