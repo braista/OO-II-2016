@@ -1,0 +1,269 @@
+[31mMessageNotUnderstood: receiver of "llamado:creadoEl:" is nil
+[0mUndefinedObject(Object)>>doesNotUnderstand: #llamado:creadoEl:
+DirectorioTest>>setUp
+[ 
+self setUp.
+self performTest ] in DirectorioTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+DirectorioTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in DirectorioTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+DirectorioTest(TestCase)>>debug
+DirectorioTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: CuentaBancaria>>tipo:
+[0mCuentaBancaria(Object)>>doesNotUnderstand: #tipo:
+CajaAhorroTest>>setUp
+[ 
+self setUp.
+self performTest ] in CajaAhorroTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CajaAhorroTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>debug
+CajaAhorroTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: CuentaBancaria>>tipo:
+[0mCuentaBancaria(Object)>>doesNotUnderstand: #tipo:
+CajaAhorroTest>>setUp
+[ 
+self setUp.
+self performTest ] in CajaAhorroTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CajaAhorroTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>debug
+CajaAhorroTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mTestFailure: Assertion failed
+[0mCajaAhorroTest(TestAsserter)>>assert:
+CajaAhorroTest>>testExtraer
+CajaAhorroTest(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in CajaAhorroTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CajaAhorroTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>debug
+CajaAhorroTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mTestFailure: Assertion failed
+[0mCajaAhorroTest(TestAsserter)>>assert:
+CajaAhorroTest>>testExtraer
+CajaAhorroTest(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in CajaAhorroTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CajaAhorroTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CajaAhorroTest(TestCase)>>debug
+CajaAhorroTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: receiver of "adaptToNumber:andSend:" is nil
+[0mUndefinedObject(Object)>>doesNotUnderstand: #adaptToNumber:andSend:
+UndefinedObject(Object)>>adaptToInteger:andSend:
+SmallInteger(Integer)>>+
+SmallInteger>>+
+CuentaCorriente>>puedeExtraer:
+CuentaCorriente(CuentaBancaria)>>extraer:
+CuentaCorrienteTest>>testExtraer
+CuentaCorrienteTest(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in CuentaCorrienteTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CuentaCorrienteTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CuentaCorrienteTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CuentaCorrienteTest(TestCase)>>debug
+CuentaCorrienteTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mTestFailure: Assertion failed
+[0mCuentaCorrienteTest(TestAsserter)>>assert:
+CuentaCorrienteTest>>testDepositar
+CuentaCorrienteTest(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in CuentaCorrienteTest(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+CuentaCorrienteTest(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in CuentaCorrienteTest(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+CuentaCorrienteTest(TestCase)>>debug
+CuentaCorrienteTest class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m
