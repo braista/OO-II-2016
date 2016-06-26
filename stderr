@@ -1,0 +1,77 @@
+[31mTestFailure: Assertion failed
+[0mTweetBaseP8Test(TestAsserter)>>assert:
+TweetBaseP8Test>>testDeviationTweetsPerUser
+TweetBaseP8Test(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in TweetBaseP8Test(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+TweetBaseP8Test(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in TweetBaseP8Test(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+TweetBaseP8Test(TestCase)>>debug
+TweetBaseP8Test class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m[31mMessageNotUnderstood: Fraction>>~
+[0mFraction(Object)>>doesNotUnderstand: #~
+TweetBaseP8Test>>testDeviationTweetsPerUser
+TweetBaseP8Test(TestCase)>>performTest
+[ 
+self setUp.
+self performTest ] in TweetBaseP8Test(TestCase)>>runCase in Block: [ ...
+BlockClosure>>ensure:
+TweetBaseP8Test(TestCase)>>runCase
+[ (self class selector: testSelector) runCase ] in TweetBaseP8Test(TestCase)>>debug in Block: [ (self class selector: testSelector) runCase ]
+BlockClosure>>ensure:
+TweetBaseP8Test(TestCase)>>debug
+TweetBaseP8Test class(TestCase class)>>debug:
+[ 
+| vScroll testClass testResult |
+vScroll := methodWidget vScrollValue.
+testClass := testMethod methodClass.
+testResult := [ testClass run: testMethod selector ]
+	on: Halt
+	do: [ :e | 
+		aBoolean
+			ifTrue: [ 
+				[ self runTestForAMethodWithAnHalt: aMethod ] fork.
+				shouldAnnounce := false.
+				TestAsserter classForTestResult new ]
+			ifFalse: [ 
+				TestAsserter classForTestResult new
+					addFailure: (testClass selector: testMethod selector);
+					yourself ] ].
+testResult updateResultsInHistory.
+testSemaphoreForMethod signal.
+(aBoolean and: [ testResult failures isEmpty not or: [ testResult errors isEmpty not ] ])
+	ifTrue: [ testClass debug: testMethod selector ].
+ClassesIconsCache removeKey: aMethod methodClass ifAbsent: [  ].
+UIManager default defer: [ methodWidget vScrollValue: vScroll ] ] in PackageTreeNautilusUI(NautilusUI)>>runTestForAMethod:notifying:priority: in Block: [ ...
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ ...
+[0m
